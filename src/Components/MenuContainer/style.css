@@ -10,6 +10,10 @@
   justify-content: center;
   align-items: center;
 }
+.Input {
+  padding: 4px;
+  margin: 10px;
+}
 @media screen and (min-width: 720px) {
   .Menu-Items {
     flex-direction: row;

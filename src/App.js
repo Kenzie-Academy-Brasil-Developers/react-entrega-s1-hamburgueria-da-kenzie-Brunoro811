@@ -20,17 +20,16 @@ function App() {
 
   const showProducts = (campo) => {
     setFilteredProducts(campo);
-    console.log("rodou");
-    console.log(filteredProducts);
-    setProducts(
-      products.filter((item) => item.name.toLowerCase() === filteredProducts)
-    );
+    setProducts(products.filter((item) => item.name === filteredProducts));
   };
+
   const handleClick = (productId) => {
-    const productSelect = products.filter((item) => {
-      return item.id == productId;
-    });
-    setCurrentSale([...currentSale, ...productSelect]);
+    if (currentSale.filter((item) => item.id == productId) == "") {
+      const productSelect = products.filter((item) => {
+        return item.id == productId;
+      });
+      setCurrentSale([...currentSale, ...productSelect]);
+    }
   };
 
   return (

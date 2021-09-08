@@ -10,13 +10,13 @@ function MenuContainer({
   filteredProducts,
   setFilteredProducts,
 }) {
-  const campo = "";
   return (
     <div className="Menu-Carpadio">
       <div>
         <h1>Carpadio</h1>
         <div className="">
           <input
+            className="Input"
             type="text"
             value={filteredProducts}
             onChange={(e) => setFilteredProducts(e.target.value)}

@@ -14,7 +14,7 @@ function Cart({ currentSale, cartTotal, setCartTotal }) {
         <h3>Cart</h3>
       </div>
       <div>
-        <h5>Subtotal: {cartTotal} </h5>
+        <h5>Subtotal: {cartTotal.toFixed(2)} </h5>
       </div>
       <div className="Cart">
         {currentSale.map((item) => (
