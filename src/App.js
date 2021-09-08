@@ -17,12 +17,10 @@ function App() {
   const [filteredProducts, setFilteredProducts] = useState("");
   const [currentSale, setCurrentSale] = useState([]);
   const [cartTotal, setCartTotal] = useState(0);
-
   const showProducts = (campo) => {
     setFilteredProducts(campo);
     setProducts(products.filter((item) => item.name === filteredProducts));
   };
-
   const handleClick = (productId) => {
     if (currentSale.filter((item) => item.id == productId) == "") {
       const productSelect = products.filter((item) => {
@@ -31,7 +29,6 @@ function App() {
       setCurrentSale([...currentSale, ...productSelect]);
     }
   };
-
   return (
     <div className="App App-header">
       <MenuContainer
