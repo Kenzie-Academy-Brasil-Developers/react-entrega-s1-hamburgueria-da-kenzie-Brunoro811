@@ -11,9 +11,9 @@ function MenuContainer({
   setFilteredProducts,
 }) {
   return (
-    <div className="Menu-Carpapio">
+    <div className="Menu-Carpadio">
       <div>
-        <h1>Carpadio</h1>
+        <h1>Carpapio</h1>
         <div className="">
           <input
             className="Input"
