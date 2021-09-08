@@ -1,0 +1,18 @@
+.Menu-Carpadio {
+  width: 99vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+}
+.Menu-Items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .Menu-Items {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

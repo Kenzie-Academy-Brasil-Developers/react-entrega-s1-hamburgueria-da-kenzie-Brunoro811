@@ -1,0 +1,11 @@
+.Button {
+  padding: 5px;
+  border: none;
+  color: #ffffff;
+}
+.Button--Add {
+  background-color: darkolivegreen;
+}
+.Button--Seach {
+  background-color: dodgerblue;
+}
